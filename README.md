@@ -1,248 +1,372 @@
-# Xush kelibsiz  
-# Matnni kesish (String Slicing)
+# Satrlarni kesish (slicing)
 
-Uy vazifalari va testlarni avtomatlashtirilgan baholash  
-- Ushbu repozitoriyani fork qiling  
-- Vazifani yeching  
-- To‘g‘ri xabar bilan commit qiling  
+## Slicing01
 
-# Masalalar  
+`s` satri berilgan. Satrning boshidan to'rtta belgini qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: s="Allamurod"
+Chiqarish: "Alla"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "Tosh"
+```
 
 ---
 
-## Slicing01  
+## Slicing02
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan to‘rtta belgi qaytarilsin.  
+`s` satri berilgan. Satrning oxiridan to'rtta belgini qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz"  
-Natija: "itma"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="code"  
-Natija: "code"  
+Kirish: s="Allamurod"
+Chiqarish: "urod"
 ```
 
-**Cheklovlar:**  
-  - 4 <= uzunlik(a) <= 10^5  
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "kent"
+```
 
 ---
 
-## Slicing02  
+## Slicing03
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning oxiridan to‘rtta belgi qaytarilsin.  
+`s` satri berilgan. Birinchi va oxirgi belgidan tashqari barcha belgilarni qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz"  
-Natija: "rkaz"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="python"  
-Natija: "thon"  
+Kirish: s="Allamurod"
+Chiqarish: "llamuro"
 ```
 
-**Cheklovlar:**  
-  - 4 <= uzunlik(a) <= 10^5  
+**Misol 2:**
+
+```Python
+Kirish: s="Xakimov"
+Chiqarish: "akimo"
+```
 
 ---
 
-## Slicing03  
+## Slicing04
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan va oxiridan boshqa barcha belgilarni qaytarilsin.  
+`s` satri va `n` soni berilgan. Satrning boshidan `n` ta belgini qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz"  
-Natija: "tmarka"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="hello"  
-Natija: "ell"  
+Kirish: s="Allamurod", n=3
+Chiqarish: "All"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
+**Misol 2:**
+
+```Python
+Kirish: s="Xakimov", n=5
+Chiqarish: "Xakim"
+```
 
 ---
 
-## Slicing04  
+## Slicing05
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan `n` ta belgi qaytarilsin.  
+`s` satri va `n` soni berilgan. Satrning oxiridan `n` ta belgini qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz", n=3  
-Natija: "itm"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="positive", n=2  
-Natija: "po"  
+Kirish: s="Allamurod", n=3
+Chiqarish: "rod"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
-  - 1 <= n <= uzunlik(a)  
+**Misol 2:**
+
+```Python
+Kirish: s="Xakimov", n=2
+Chiqarish: "ov"
+```
 
 ---
 
-## Slicing05  
+## Slicing06
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning oxiridan `n` ta belgi qaytarilsin.  
+`s` satri va `n` soni berilgan. Satr boshidan `n` ta belgini olib tashlab, qolgan qismini qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz", n=3  
-Natija: "kaz"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="positive", n=1  
-Natija: "e"  
+Kirish: s="Allamurod", n=4
+Chiqarish: "murod"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
-  - 1 <= n <= uzunlik(a)  
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent", n=4
+Chiqarish: "kent"
+```
 
 ---
 
-## Slicing06  
+## Slicing07
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning boshidan `n` ta belgi olib tashlanib, qolgan qismi qaytarilsin.  
+`s` satri va `n` soni berilgan. Satr oxiridan `n` ta belgini olib tashlab, qolgan qismini qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz", n=3  
-Natija: "arkaz"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="apple", n=1  
-Natija: "pple"  
+Kirish: s="Allamurod", n=5
+Chiqarish: "Alla"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
-  - 1 <= n <= uzunlik(a)  
+**Misol 2:**
+
+```Python
+Kirish: s="Xakimov", n=2
+Chiqarish: "Xakim"
+```
 
 ---
 
-## Slicing07  
+## Slicing08
 
-  `s` matn o‘zgaruvchisi berilgan. Matnning oxiridan `n` ta belgi olib tashlanib, qolgan qismi qaytarilsin.  
+`s` satri berilgan. Toq o'rinlardagi (1-, 3-, 5-, ...) belgilarni qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz", n=3  
-Natija: "itmar"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="apple", n=1  
-Natija: "appl"  
+Kirish: s="Allamurod"
+Chiqarish: "Almrd"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
-  - 1 <= n <= uzunlik(a)  
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "Tskn"
+```
 
 ---
 
-## Slicing08  
+## Slicing09
 
-  `s` matn o‘zgaruvchisi berilgan. Toq o‘rinlardagi belgilarni qaytarilsin.  
+`s` satri berilgan. Juft o'rinlardagi (2-, 4-, 6-, ...) belgilarni qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz"  
-Natija: "imra"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="apple"  
-Natija: "pl"  
+Kirish: s="Allamurod"
+Chiqarish: "lauo"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "ohet"
+```
 
 ---
 
-## Slicing09  
+## Slicing10
 
-  `s` matn o‘zgaruvchisi berilgan. Juft o‘rinlardagi belgilarni qaytarilsin.  
+`s` satri, `n` va `k` sonlari berilgan. `n` dan `k` gacha (k kirmaydi) bo'lgan indekslardagi belgilarni qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz"  
-Natija: "trakz"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="apple"  
-Natija: "ape"  
+Kirish: s="Allamurod Xakimov", n=10, k=17
+Chiqarish: "Xakimov"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
+**Misol 2:**
+
+```Python
+Kirish: s="Allamurod", n=2, k=5
+Chiqarish: "lam"
+```
 
 ---
 
-## Slicing10  
+## Slicing11
 
-  `s` matn o‘zgaruvchisi berilgan. `n` dan `k` gacha bo‘lgan indekslardagi belgilarni qaytarilsin.  
+`s` satri berilgan. Satrni teskari tartibda qaytaring.
 
-**Misol 1:**  
-
-```Python
-Kiritish: a="itmarkaz", n=2, k=5  
-Natija: "mark"  
-```
-
-**Misol 2:**  
+**Misol 1:**
 
 ```Python
-Kiritish: a="apple", n=2, k=2  
-Natija: "p"  
+Kirish: s="Allamurod"
+Chiqarish: "dorumallA"
 ```
 
-**Cheklovlar:**  
-  - 2 <= uzunlik(a) <= 10^5  
-  - 0 <= n <= uzunlik(a)  
-  - n <= k <= uzunlik(a)  
+**Misol 2:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "tnekhsoT"
+```
 
 ---
+
+## Slicing12
+
+So'z berilgan. Agar u palindrom bo'lsa (teskarisi o'ziga teng) `True`, aks holda `False` qaytaring. Kesishdan foydalaning.
+
+**Misol 1:**
+
+```Python
+Kirish: s="kiyik"
+Chiqarish: True
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Allamurod"
+Chiqarish: False
+```
+
+---
+
+## Slicing13
+
+Allamurodning tug'ilgan sanasi "KK.OO.YYYY" ko'rinishida berilgan. Uni "YYYY-OO-KK" ko'rinishiga keltirib qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: sana="15.03.2000"
+Chiqarish: "2000-03-15"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: sana="01.09.2026"
+Chiqarish: "2026-09-01"
+```
+
+---
+
+## Slicing14
+
+Allamurodning 16 xonali karta raqami berilgan. Dastlabki 4 ta va oxirgi 4 ta raqamni qoldirib, "XXXX **** **** YYYY" ko'rinishida qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: karta="8600123456781234"
+Chiqarish: "8600 **** **** 1234"
+```
+
+---
+
+## Slicing15
+
+Allamurodning telefon raqami "+998XXYYYZZWW" ko'rinishida bo'sh joysiz berilgan. Uni "+998 XX YYY ZZ WW" ko'rinishida qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: telefon="+998901234567"
+Chiqarish: "+998 90 123 45 67"
+```
+
+---
+
+## Slicing16
+
+Ism va familiya berilgan. "Familiya I." ko'rinishidagi qisqa yozuvni qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: ism="Allamurod", familiya="Xakimov"
+Chiqarish: "Xakimov A."
+```
+
+---
+
+## Slicing17
+
+Uzunligi juft bo'lgan so'z berilgan. Uning ikki yarmini o'rnini almashtirib qaytaring. `len()` va kesishdan foydalaning.
+
+**Misol 1:**
+
+```Python
+Kirish: s="Toshkent"
+Chiqarish: "kentTosh"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: s="Python"
+Chiqarish: "honPyt"
+```
+
+---
+
+## Slicing18
+
+Allamurod rezyume faylining nomini o'zgartirmoqda. ".pdf" bilan tugaydigan fayl nomi berilgan. Kengaytmani ".docx" ga almashtirib qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: fayl="allamurod_cv.pdf"
+Chiqarish: "allamurod_cv.docx"
+```
+
+---
+
+## Slicing19
+
+Allamurodning kod yozish vaqti "SS:DD:SS" ko'rinishida berilgan. Uni soniyalarga aylantirib qaytaring.
+
+**Misol 1:**
+
+```Python
+Kirish: vaqt="05:33:20"
+Chiqarish: 20000
+```
+
+**Misol 2:**
+
+```Python
+Kirish: vaqt="01:01:01"
+Chiqarish: 3661
+```
+
+---
+
+## Slicing20
+
+Ism, familiya va tug'ilgan yil berilgan. Login yarating: familiyaning dastlabki 3 harfi + ismning birinchi harfi + yilning oxirgi 2 raqami.
+
+**Misol 1:**
+
+```Python
+Kirish: ism="Allamurod", familiya="Xakimov", yil=2000
+Chiqarish: "XakA00"
+```
+
+**Misol 2:**
+
+```Python
+Kirish: ism="Allamurod", familiya="Xakimov", yil=1998
+Chiqarish: "XakA98"
+```
 

@@ -1,11 +1,11 @@
-def main(s,n,k):
+def main(s, n, k):
     """
-    The s string variable is given. return from index n to index k.
-    Args:
-        s(str): parameter
-        n(int): parameter
-        k(int): parameter
-    Returns:
-        str: answer
+    s satri, n va k sonlari berilgan. n dan k gacha (k kirmaydi) bo'lgan indekslardagi belgilarni qaytaring.
+    Argumentlar:
+        s(str): satr
+        n(int): boshlang'ich indeks
+        k(int): oxirgi indeks
+    Qaytaradi:
+        str: natija satri
     """
     return

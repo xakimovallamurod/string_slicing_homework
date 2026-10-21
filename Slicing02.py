@@ -1,9 +1,9 @@
 def main(s):
     """
-    The s string variable is given. return four characters from the end.
-    Args:
-        s(str): parameter
-    Returns:
-        str: answer
+    s satri berilgan. Satrning oxiridan to'rtta belgini qaytaring.
+    Argumentlar:
+        s(str): satr
+    Qaytaradi:
+        str: natija satri
     """
     return

@@ -1,10 +1,10 @@
-def main(s,n):
+def main(s, n):
     """
-    The s string variable is given. return all characters except n characters from the beginning.
-    Args:
-        s(str): parameter
-        n(int): parameter
-    Returns:
-        str: answer
+    s satri va n soni berilgan. Satr boshidan n ta belgini olib tashlab, qolgan qismini qaytaring.
+    Argumentlar:
+        s(str): satr
+        n(int): belgilar soni
+    Qaytaradi:
+        str: natija satri
     """
     return

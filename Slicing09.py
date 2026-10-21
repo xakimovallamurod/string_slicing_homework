@@ -1,9 +1,9 @@
 def main(s):
     """
-    The s string variable is given. return the characters in the even position.
-    Args:
-        s(str): parameter
-    Returns:
-        str: answer
+    s satri berilgan. Juft o'rinlardagi (2-, 4-, 6-, ...) belgilarni qaytaring.
+    Argumentlar:
+        s(str): satr
+    Qaytaradi:
+        str: natija satri
     """
     return

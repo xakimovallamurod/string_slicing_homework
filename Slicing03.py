@@ -1,8 +1,9 @@
 def main(s):
-    """The s string variable is given. Return all characters except the one at the beginning and end.
-    Args:
-        s(str): parameter
-    Returns:
-        str: answer
+    """
+    s satri berilgan. Birinchi va oxirgi belgidan tashqari barcha belgilarni qaytaring.
+    Argumentlar:
+        s(str): satr
+    Qaytaradi:
+        str: natija satri
     """
     return

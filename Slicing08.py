@@ -1,9 +1,9 @@
 def main(s):
     """
-    The s string variable is given. return the characters in the odd position.
-    Args:
-        s(str): parameter
-    Returns:
-        str: answer
+    s satri berilgan. Toq o'rinlardagi (1-, 3-, 5-, ...) belgilarni qaytaring.
+    Argumentlar:
+        s(str): satr
+    Qaytaradi:
+        str: natija satri
     """
     return
